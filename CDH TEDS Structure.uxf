@@ -4,14 +4,14 @@
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1131</x>
-      <y>910</y>
+      <x>637</x>
+      <y>728</y>
       <w>182</w>
       <h>91</h>
     </coordinates>
     <panel_attributes>RBF_Power TEDS
 --
-What does COMMS
+What does CDH
 do with RBF inserted
 halign=left
 group=1</panel_attributes>
@@ -20,31 +20,31 @@ group=1</panel_attributes>
   <element>
     <id>UMLHierarchy</id>
     <coordinates>
-      <x>247</x>
-      <y>351</y>
+      <x>78</x>
+      <y>273</y>
       <w>442</w>
-      <h>559</h>
+      <h>481</h>
     </coordinates>
     <panel_attributes>type=Package
-Comms TEDS
+CDH TEDS
 	Header TEDS
 		Communication TEDS
+			SPI Protocol
+			I2C Protocol
+			UART Protocol
+			1-Wire Protocol
 		Processor TEDS
-		Shared COMMS TEDS
-	Transciever TEDS
-	Antenna TEDS
-	Power Amp TEDS
+
 Structure TEDS
 	RBF TEDS
-	External COMMS TEDS
-	Antenna Release TEDS</panel_attributes>
+	External CDH TEDS</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>767</x>
-      <y>416</y>
+      <x>572</x>
+      <y>221</y>
       <w>559</w>
       <h>377</h>
     </coordinates>
@@ -54,23 +54,32 @@ Structure TEDS
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>806</x>
-      <y>494</y>
-      <w>234</w>
-      <h>91</h>
+      <x>598</x>
+      <y>299</y>
+      <w>273</w>
+      <h>273</h>
     </coordinates>
     <panel_attributes>Communication TEDS
 --
-How does the Payload talk
+How does the CDH talk
 to the rest of the satelitte
+
+
+
+
+
+
+
+
+
 halign=left</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1079</x>
-      <y>494</y>
+      <x>884</x>
+      <y>299</y>
       <w>221</w>
       <h>91</h>
     </coordinates>
@@ -84,25 +93,25 @@ halign=left</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>741</x>
-      <y>364</y>
-      <w>1170</w>
-      <h>468</h>
+      <x>546</x>
+      <y>169</y>
+      <w>650</w>
+      <h>481</h>
     </coordinates>
-    <panel_attributes>COMMS TEDS</panel_attributes>
+    <panel_attributes>CDH TEDS</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1365</x>
-      <y>910</y>
+      <x>871</x>
+      <y>728</y>
       <w>260</w>
       <h>91</h>
     </coordinates>
-    <panel_attributes>External COMMS TEDS
+    <panel_attributes>External TransducersTEDS
 --
-Any interface between COMMS
+Any interface between CDH
 components and the structure
 halign=left
 group=1</panel_attributes>
@@ -111,8 +120,8 @@ group=1</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1105</x>
-      <y>858</y>
+      <x>611</x>
+      <y>676</y>
       <w>559</w>
       <h>169</h>
     </coordinates>
@@ -123,61 +132,56 @@ group=1</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>923</x>
-      <y>650</y>
-      <w>273</w>
-      <h>91</h>
+      <x>611</x>
+      <y>416</y>
+      <w>65</w>
+      <h>65</h>
     </coordinates>
-    <panel_attributes>Shared ADCS TEDS
---
-Any ADCS assests which
-can be shared by other systems
-halign=left</panel_attributes>
+    <panel_attributes>SPI</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1391</x>
+      <x>689</x>
+      <y>416</y>
+      <w>65</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>I2C</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>767</x>
+      <y>416</y>
+      <w>78</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>UART</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>637</x>
       <y>494</y>
-      <w>221</w>
-      <h>91</h>
+      <w>91</w>
+      <h>65</h>
     </coordinates>
-    <panel_attributes>Transciever TEDS
---
-What transciever and
-protocol are we using
-halign=left</panel_attributes>
+    <panel_attributes>1-Wire</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1651</x>
+      <x>741</x>
       <y>494</y>
-      <w>221</w>
-      <h>91</h>
+      <w>91</w>
+      <h>65</h>
     </coordinates>
-    <panel_attributes>Antenna TEDS
---
-What type of antenna and
-its properties
-halign=left</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLPackage</id>
-    <coordinates>
-      <x>1521</x>
-      <y>650</y>
-      <w>221</w>
-      <h>91</h>
-    </coordinates>
-    <panel_attributes>Power Amp TEDS
---
-Characteristics of the
-power amp
-halign=left</panel_attributes>
+    <panel_attributes>GPIO</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
